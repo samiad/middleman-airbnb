@@ -7,17 +7,17 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title></title>
-    <link href="stylesheets/application-5ef830ee.css" rel="stylesheet" />
-    <script src="javascripts/application-93de88c9.js"></script>
-    <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
+    <link href="../stylesheets/application-5ef830ee.css" rel="stylesheet" />
+    <script src="../javascripts/application-93de88c9.js"></script>
+    <link href="../images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
   <body>
 
     <div class="navbar-wagon">
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
-    <!-- <img src="images/logo-acc9c0ec.png" alt="logo"> -->
-    <img src="images/logo-acc9c0ec.png" alt="Logo" /> <!-- remplace html du dessus -->
+    <!-- <img src="images/logo.png" alt="logo"> -->
+    <img src="../images/logo-acc9c0ec.png" alt="Logo" /> <!-- remplace html du dessus -->
   </a>
 
   <!-- Right Navigation -->
@@ -56,19 +56,38 @@
   </div>
 </div>
    <!-- inject layouts/_navbar.html.erb -->
-    <div id="team">
-  <div class="team-content">
-    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
-    <ul class="list-inline text-center">
-        <li>
-          <img src="https://kitt.lewagon.com/placeholder/users/samiad" class="img-circle" alt="Samiad" />
-          <h3>Samiad</h3>
-        </li>
-        <li>
-          <img src="https://kitt.lewagon.com/placeholder/users/bellangerq" class="img-circle" alt="Bellangerq" />
-          <h3>Bellangerq</h3>
-        </li>
-    </ul>
+    <!-- Access data.flats with owner's name as key -->
+
+<!-- Inject flat data in template -->
+<div class="wrapper">
+  <div class="flat-banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/tokyo');">
+  </div>
+
+  <div class="container flat-container">
+    <div class="flat-owner">
+      <div class="flat-owner-id text-center">
+        <img src="https://kitt.lewagon.com/placeholder/users/bellangerq" class="img-circle img-flat" alt="Bellangerq" />
+        <p>Quentin's home</p>
+      </div>
+      <div class="flat-owner-description">
+        <h1>Small flat in Tokyo</h1>
+        <p>Tokyo, Japan</p>
+      </div>
+    </div>
+    <div class="flat-form text-center">
+      <h1>Book this flat</h1>
+      <div class="flat-chek-form">
+        <div class="form-group">
+          <input type="text" class="form-control text-center" placeholder="check-in">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control text-center" placeholder="check-out">
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Book it" class="btn-form btn btn-primary btn-block">
+      </div>
+    </div>
   </div>
 </div>
                       <!-- Page content is injected here -->
